@@ -1,0 +1,14 @@
+
+video {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+a {
+    color: darkgreen;
+}
+
+.centered {
+    text-align: center;
+}
