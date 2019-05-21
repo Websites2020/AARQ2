@@ -1,3 +1,7 @@
+body {
+  background-image: url("ricepaper.png");
+  background-repeat: repeat;
+}
 
 video {
     display: block;
