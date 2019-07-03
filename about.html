@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Under Construction</title>
+    <title>AARQ - About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <h2 class="centered">Association for the Administration of Rice Quotas, Inc.</h2>
+        <img src="branch.png" class="center3">
+        <h2 class="mainTitle display-4">Association for the Administration of Rice Quotas, Inc.</h2>
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="about.html" style="color: green">About</a>
+                <a class="nav-link" href="about.html" style="color: green; text-decoration: underline;">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="auctions.html">Auctions</a>
@@ -28,10 +29,10 @@
                 <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="faq.html">FAQs</a>
+                <a class="nav-link" href="faq.html">FAQ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="myBtn" style="color: red" href="#">Next Auction Date</a>
+                <a class="nav-link" id="myBtn" style="color: white; background: darkgreen;" href="#">Next Auction Date</a>
             </li>
         </ul>
     <div class="container">
@@ -41,7 +42,7 @@
                     <div class="modal-content">
                       <span class="close">&times;</span>
                       <h3 class="centered">The Next Auction is November 29, 2019</h3>
-                      <hr>
+                      <img class="center2" src="map.png">
                       <p class="centered" style="font-size: 20px"><span id="demo"></span> remaining</p>
                     </div>
                   
@@ -49,9 +50,15 @@
         <div class="row">
             <div class="col-md-12">
                 <br>
-                <h1>About</h1>
-                <br>
-        
+                <!-- <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        
+                    </div>
+                </div> -->
+                <h1 class="display-4">About</h1>
+                <hr>
+                <img class="center" src="riceworker.jpg">
+                <br><hr>
                 <h2 class="title2">Purpose</h2>
 
                 <p>The purpose of AARQ is to act on behalf of the U.S. rice industry:</p>
@@ -60,114 +67,118 @@
                         <li>to manage on an open tender basis the tariff-rate quotas (TRQs) for milled and brown rice granted by the European Union (EU) to the United States under the U.S. – EU Enlargement Agreement signed July 22, 1996, and</li>
                         <li>to provide for the distribution of the proceeds received from the open tender process based on exports of rough, brown and milled rice.</li>
                     </ol>
-               <br><br>
+               <br><hr><br>
 
                 <h2 class="title2">Membership</h2>
 
                 <p>AARQ has two categories of members:  Mill Members and Export Members.  Any individual or entity incorporated or domiciled in the United States that meets the criteria for either a “Mill Member” or an “Export Member” shall be eligible to become a member of AARQ.  A Mill Member is an individual or entity actively engaged in rice milling in the United States.  An Export Member is an individual or entity that has exported U.S. rice from the United States to any country prior to its application for membership and is not engaged in rice milling in the United States.  There are two classes of members:  Voting Members and Non-Voting Members.</p>
                 
-                <br><br>
+                <br><hr><br>
 
                 <h2 class="title2">AARQ Members</h2>
     
                 <br>
+ 
+    <div class="row">
+        <div class="col-md-12">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for company by name or location...">
             
-                <ol>
-                    <li><strong>ADM Latin, Inc.</strong>, Decatur, Illinois,<br>
+                <ol id="myUL">
+                    <li><a href="#"><strong>ADM Latin, Inc.</strong>, Decatur, Illinois,<br>
                         <strong>ADM Grain Company</strong>, Decatur, Illinois,<br>
                         and <strong>ADM Rice, Inc.</strong>, Tarrytown, New
                         York<br> (subsidiaries of Archer Daniels
-                        Midland Company).</li><br>
-                    <li><strong>American Commodity Company,
-                        LLC</strong>, Williams, California.</li><br>
-                    <li><strong>Associated Rice Marketing
+                        Midland Company).</a></li>
+                    <li><a href="#"><strong>American Commodity Company,
+                        LLC</strong>, Williams, California.</a></li>
+                    <li><a href="#"><strong>Associated Rice Marketing
                         Cooperative (ARMCO)</strong>, Richvale,
-                        California.</li><br>
-                    <li><strong>Bunge Milling</strong>, Saint Louis,
+                        California.</a></li>
+                    <li><a href="#"><strong>Bunge Milling</strong>, Saint Louis,
                         Missouri<br> (a subsidiary of Bunge North
                         America, White Plains, New York),<br> dba
                         PIRMI (Pacific International Rice Mills),
-                        Woodland, California.</li><br>
-                    <li><strong>Cargill Americas, Inc.</strong>, and its
+                        Woodland, California.</a></li>
+                    <li><a href="#"><strong>Cargill Americas, Inc.</strong>, and its
                         subsidiary <strong>CAI Trading, LLC</strong>, Coral
-                        Gables, Florida.</li><br>
-                    <li><strong>Farmers’ Rice Cooperative</strong>,
-                        Sacramento, California.</li><br>
-                    <li><strong>Farmers Rice Milling Company,
-                        Inc.</strong>, Lake Charles, Louisiana.</li><br>
-                    <li><strong>Far West Rice, Inc.</strong>, Durham,
-                        California.</li><br>
-                    <li><strong>Gulf Pacific Rice Co., Inc.</strong>, Houston,
+                        Gables, Florida.</a></li>
+                    <li><a href="#"><strong>Farmers’ Rice Cooperative</strong>,
+                        Sacramento, California.</a></li>
+                    <li><a href="#"><strong>Farmers Rice Milling Company,
+                        Inc.</strong>, Lake Charles, Louisiana.</a></li>
+                    <li><a href="#"><strong>Far West Rice, Inc.</strong>, Durham,
+                        California.</a></li>
+                    <li><a href="#"><strong>Gulf Pacific Rice Co., Inc.</strong>, Houston,
                         Texas;<br> <strong>Gulf Rice Milling, Inc.</strong>, Houston,
                         Texas;<br> and <strong>Harvest Rice, Inc.</strong>, McGehee,
                         Arkansas<br> (each a subsidiary of Gulf
-                        Pacific, Inc., Houston, Texas).</li><br>
-                    <li><strong>Gulf Pacific Disc, Inc.</strong>, Houston,
-                        Texas.</li><br>
-                    <li><strong>Itochu International Inc.</strong>, Portland,
+                        Pacific, Inc., Houston, Texas).</a></li>
+                    <li><a href="#"><strong>Gulf Pacific Disc, Inc.</strong>, Houston,
+                        Texas.</a></li>
+                    <li><a href="#"><strong>Itochu International Inc.</strong>, Portland,
                         Oregon<br> (a subsidiary of Itochu
-                        Corporation (Japan)).</li><br>
-                    <li><strong>Interra International, LLC</strong>, Chapel
-                        Hill, North Carolina.</li><br>
-                    <li><strong>JFC International Inc.</strong>, Los
+                        Corporation (Japan)).</a></li>
+                    <li><a href="#"><strong>Interra International, LLC</strong>, Chapel
+                        Hill, North Carolina.</a></li>
+                    <li><a href="#"><strong>JFC International Inc.</strong>, Los
                         Angeles, California<br> (a subsidiary of
-                        Kikkoman Corp.).</li><br>
-                    <li><strong>JIT Products, Inc.</strong>, Davis,
-                        California.</li><br>
-                    <li><strong>Kennedy Rice Dryers, L.L.C.</strong>, Mer
-                        Rouge, Louisiana.</li><br>
-                    <li><strong>Kitoku America, Inc.</strong>, Burlingame,
+                        Kikkoman Corp.).</a></li>
+                    <li><a href="#"><strong>JIT Products, Inc.</strong>, Davis,
+                        California.</a></li>
+                    <li><a href="#"><strong>Kennedy Rice Dryers, L.L.C.</strong>, Mer
+                        Rouge, Louisiana.</a></li>
+                    <li><a href="#"><strong>Kitoku America, Inc.</strong>, Burlingame,
                         California<br> (a subsidiary of Kitoku
-                        Shinryo Co., Ltd. (Japan)).</li><br>
-                    <li><strong>LD Commodities Rice
+                        Shinryo Co., Ltd. (Japan)).</a></li>
+                    <li><a href="#"><strong>LD Commodities Rice
                         Merchandising LLC</strong>, Wilton,
                         Connecticut,<br> and <strong>LD Commodities
                         Interior Rice Merchandising LLC</strong>,
                         Kansas City, Missouri<br> (subsidiaries of
                         Louis Dreyfus Commodities LLC,
-                        Wilton, Connecticut).</li><br>
-                    <li><strong>Louisiana Rice Mill, LLC</strong>,
-                        Mermentau, Louisiana.</li><br>
-                    <li><strong>Nidera US LLC</strong>, Wilton,
+                        Wilton, Connecticut).</a></li>
+                    <li><a href="#"><strong>Louisiana Rice Mill, LLC</strong>,
+                        Mermentau, Louisiana.</a></li>
+                    <li><a href="#"><strong>Nidera US LLC</strong>, Wilton,
                         Connecticut<br> (a subsidiary of Nidera BV
-                        (Netherlands)).</li><br>
-                    <li><strong>Nishimoto Trading Co., Ltd.</strong> dba
+                        (Netherlands)).</a></li>
+                    <li><a href="#"><strong>Nishimoto Trading Co., Ltd.</strong> dba
                         <strong>Wismettac Asian Foods</strong>, Santa Fe
                         Springs, California<br> (a subsidiary of
                         Nishimoto Trading Company, Ltd.
-                        (Japan).</li><br>
-                    <li><strong>Producers Rice Mill, Inc.</strong>,
-                        Stuttgart, Arkansas.</li><br>
-                    <li><strong>Riceland Foods, Inc.</strong>, Stuttgart,
-                        Arkansas.</li><br>
-                    <li><strong>Riviana Foods Inc.</strong>, Houston,
+                        (Japan).</a></li>
+                    <li><a href="#"><strong>Producers Rice Mill, Inc.</strong>,
+                        Stuttgart, Arkansas.</a></li>
+                    <li><a href="#"><strong>Riceland Foods, Inc.</strong>, Stuttgart,
+                        Arkansas.</a></li>
+                    <li><a href="#"><strong>Riviana Foods Inc.</strong>, Houston,
                         Texas<br> (a subsidiary of Ebro Foods, S.A.
                         (Spain)),<br> for the activities of itself and
                         its subsidiary, <strong>American Rice, Inc.</strong>,
-                        Houston, Texas.</li><br>
-                    <li><strong>Sinamco Trading Inc.</strong>,
-                        Minneapolis, Minnesota.</li><br>
-                    <li><strong>SunFoods LLC</strong>, Woodland,
-                        California.</li><br>
-                    <li><strong>SunWest Foods, Inc.</strong>, Davis,
-                        California.</li><br>
-                    <li><strong>The Sun Valley Rice Co., LLC,</strong>
-                        Arbuckle, California.</li><br>
-                    <li><strong>TRC Trading Corporation</strong>,
+                        Houston, Texas.</a></li>
+                    <li><a href="#"><strong>Sinamco Trading Inc.</strong>,
+                        Minneapolis, Minnesota.</a></li>
+                    <li><a href="#"><strong>SunFoods LLC</strong>, Woodland,
+                        California.</a></li>
+                    <li><a href="#"><strong>SunWest Foods, Inc.</strong>, Davis,
+                        California.</a></li>
+                    <li><a href="#"><strong>The Sun Valley Rice Co., LLC,</strong>
+                        Arbuckle, California.</a></li>
+                    <li><a href="#"><strong>TRC Trading Corporation</strong>,
                         Roseville, California<br> (a subsidiary of
                         TRC Group Inc., Roseville, California)<br>
                         and its subsidiary <strong>Gulf Rice Arkansas II,
-                        LLC</strong>, Crawfordsville, Arkansas.</li><br>
-                    <li><strong>Trujillo & Sons, Inc.</strong>, Miami,
-                        Florida.</li><br>
-                    <li><strong>Veetee Foods Inc.</strong>, Islandia, New
+                        LLC</strong>, Crawfordsville, Arkansas.</a></li>
+                    <li><a href="#"><strong>Trujillo & Sons, Inc.</strong>, Miami,
+                        Florida.</a></li>
+                    <li><a href="#"><strong>Veetee Foods Inc.</strong>, Islandia, New
                         York (a subsidiary of Veetee
-                        Investments Corporation (Bahamas)).</li><br>
-                    <li><strong>Wehah Farm, Inc.</strong>, dba Lundberg
-                        Family Farms, Richvale, California.</li><br>
+                        Investments Corporation (Bahamas)).</a></li>
+                    <li><a href="#"><strong>Wehah Farm, Inc.</strong>, dba Lundberg
+                        Family Farms, Richvale, California.</a></li>
                 </ol>
-
-                <br><br>
+            
+                <br><hr><br>
 
                 <h2 class="title2">United States Regulations</h2>
 
@@ -177,72 +188,107 @@
 
                 <p>Click to download and read the <a class="docs" href="PDF/2016-10711.pdf">Federal Register Notice from May 6 2016</a>.</p>
 
-                <br><br>
+                <br><hr><br>
 
                 <h2 class="title2">European Union Regulations</h2>
 
                 <p>Click to download and read the <a class="docs" href="PDF/EC-Regulation-1273_2011-12.07.11.pdf">European Commission Regulation 1273 of December 7 2011</a>.</p>
-                
+                <br><hr>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p class="centered">
+                            © 2019 Association for the Administration of Rice Quotas, Inc.<br>
+                            2001 L St NW Ste 1000, Washington, DC 20036<br>
+                            Phone: 202-466-1150 | Fax: 202-785-3330 | aarq@economic-consulting.com 
+                        </p>  
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script>
 
-            // Get the modal
-            var modal = document.getElementById("myModal");
-    
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-    
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-    
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-            modal.style.display = "block";
-            }
-    
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
+        }
+        }
+
+        // COUNTDOWN TIMER
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 29, 2019 9:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+
+
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+            } else {
+            li[i].style.display = "none";
             }
-    
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-            }
-    
-            // COUNTDOWN TIMER
-            // Set the date we're counting down to
-            var countDownDate = new Date("Nov 29, 2019 9:00:00").getTime();
-    
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-    
-            // Get today's date and time
-            var now = new Date().getTime();
-    
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-    
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-    
-            // If the count down is finished, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-            }, 1000);
+        }
+    }
     </script>     
 </body>
 </html>
