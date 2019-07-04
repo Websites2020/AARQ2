@@ -1,12 +1,18 @@
 body {
   background-image: url("./images/ricepaper.png");
+  /* background: rgb(220, 246, 255); */
   background-repeat: repeat;
 }
 
-video {
+.mainImage {
     display: block;
     margin: 0 auto;
     width: 70%;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.display-4 {
+  font-size: 2.7em;
 }
 
 .nav-item a {
@@ -78,6 +84,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    box-shadow: 4px 4px 4px gray;
   }
 
   .center2 {

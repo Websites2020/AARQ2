@@ -7,6 +7,10 @@
     <title>AARQ - Contact</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,17 +20,39 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <a class="dropdown-item" href="about.html#purpose">Purpose</a>
+                    <a class="dropdown-item" href="about.html#membership">Membership</a>
+                    <a class="dropdown-item" href="about.html#members">Members</a>
+                    <a class="dropdown-item" href="about.html#usreg">U.S. and E.U. Regulations</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="auctions.html">Auctions</a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="auctions.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Auctions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="auctions.html">Auctions</a>
+                    <a class="dropdown-item" href="auctions.html#schedule">Schedule of Auctions</a>
+                    <a class="dropdown-item" href="auctions.html#opentender">Notice of Open Tender for Jan. 2019 Tranche</a>
+                    <a class="dropdown-item" href="auctions.html#bids">Bid Instructions and Bid Form for Jan. 2019 Tranche</a>
+                    <a class="dropdown-item" href="auctions.html#letter">Sample Letter of Credit</a>
+                    <a class="dropdown-item" href="auctions.html#results">Auction Results</a>
+                </div>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="transfers.html">Transfers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="contact.html" style="color: green; text-decoration: underline;">Contact</a>
+                <a class="nav-link" href="contact.html" style="color: green;">Contact</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="faq.html">FAQ</a>
@@ -57,7 +83,7 @@
                 </div> -->
                 <h1 class="display-4">Contact</h1>
                 <hr>
-                <img class="center" src="./images/mill.jpg">
+                <img class="center" src="./images/rice-bowl.jpg">
                 <br><hr>
                 <p>You may contact AARQ by phone at (202) 466-1150, by e-mail at aarq@economic-consulting.com, or by completing the form below:</p>
                 

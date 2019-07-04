@@ -7,6 +7,10 @@
     <title>AARQ - Auctions</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,12 +20,34 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <a class="dropdown-item" href="about.html#purpose">Purpose</a>
+                    <a class="dropdown-item" href="about.html#membership">Membership</a>
+                    <a class="dropdown-item" href="about.html#members">Members</a>
+                    <a class="dropdown-item" href="about.html#usreg">U.S. and E.U. Regulations</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="auctions.html" style="color: green; text-decoration: underline;">Auctions</a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="auctions.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: green;">
+                    Auctions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="auctions.html">Auctions</a>
+                    <a class="dropdown-item" href="auctions.html#schedule">Schedule of Auctions</a>
+                    <a class="dropdown-item" href="auctions.html#opentender">Notice of Open Tender for Jan. 2019 Tranche</a>
+                    <a class="dropdown-item" href="auctions.html#bids">Bid Instructions and Bid Form for Jan. 2019 Tranche</a>
+                    <a class="dropdown-item" href="auctions.html#letter">Sample Letter of Credit</a>
+                    <a class="dropdown-item" href="auctions.html#results">Auction Results</a>
+                </div>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="transfers.html">Transfers</a>
             </li>
@@ -57,9 +83,9 @@
                 </div> -->
                 <h1 class="display-4">Auctions</h1>
                 <hr>
-                <img class="center" src="./images/tractor.jpg">
+                <img class="center" src="./images/rice-plants.jpg">
                 <br><hr>
-                <h2 class="title2">2019 Schedule</h2>
+                <h2 id="schedule" class="title2">2019 Schedule</h2>
     
                     Click to download and read the <a class="docs" href="PDF/AARQ-Schedule-of-Open-Tenders-for-2019.pdf">2019 Schedule of Open Tenders</a>.
                     <br><br><hr>
@@ -69,12 +95,12 @@
                     Click to download and read the <a class="docs" href="PDF/AARQ-Schedule-of-Open-Tenders-for-2018.pdf">2018 Schedule of Open Tenders</a>.
                     <br><br><hr>
 
-                <h2 class="title2">Notice of Open Tender</h2>
+                <h2 id="opentender" class="title2">Notice of Open Tender</h2>
     
                     Click to download and read the <a class="docs" href="PDF/AARQ-January-2019-Tender-Notice.pdf">January 2019 Notice of Open Tender</a>.
                     <br><br><hr>
 
-                <h2 class="title2">Bid Instructions</h2>
+                <h2 id="bids" class="title2">Bid Instructions</h2>
     
                     Click to download the <a class="docs" href="PDF/AARQ-January-2019-Bid-Instructions.pdf">January 2019 Bid Instructions</a>.
                     <br><br><hr>
@@ -84,12 +110,12 @@
                 Click to download the <a class="docs" href="PDF/Bid-Form--Fillable-PDF.pdf">January 2019 Bid Form</a>.
                 <br><br><hr>
 
-                <h2 class="title2">Letter of Credit</h2>
+                <h2 id="letter"class="title2">Letter of Credit</h2>
     
                     Click to download the <a class="docs" href="PDF/Letter-of-Credit-PDF.pdf">Sample Letter of Credit</a>.
                     <br><br><hr>
 
-                <h2 class="title2">Auction Results</h2>
+                <h2 id="results" class="title2">Auction Results</h2>
   
                     Click to download and read the <a class="docs" href="PDF/AARQ-Lowest-Winning-Bid-Table.pdf">Lowest Winning Bid Table</a>.
                     <br><br><hr>

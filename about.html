@@ -7,6 +7,9 @@
     <title>AARQ - About</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,12 +19,34 @@
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html" style="color: green; text-decoration: underline;">About</a>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: green;">
+                    About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <a class="dropdown-item" href="about.html#purpose">Purpose</a>
+                    <a class="dropdown-item" href="about.html#membership">Membership</a>
+                    <a class="dropdown-item" href="about.html#members">Members</a>
+                    <a class="dropdown-item" href="about.html#usreg">U.S. and E.U. Regulations</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="auctions.html">Auctions</a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="auctions.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Auctions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="auctions.html">Auctions</a>
+                    <a class="dropdown-item" href="auctions.html#schedule">Schedule of Auctions</a>
+                    <a class="dropdown-item" href="auctions.html#opentender">Notice of Open Tender for Jan. 2019 Tranche</a>
+                    <a class="dropdown-item" href="auctions.html#bids">Bid Instructions and Bid Form for Jan. 2019 Tranche</a>
+                    <a class="dropdown-item" href="auctions.html#letter">Sample Letter of Credit</a>
+                    <a class="dropdown-item" href="auctions.html#results">Auction Results</a>
+                </div>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link" href="transfers.html">Transfers</a>
             </li>
@@ -57,9 +82,9 @@
                 </div> -->
                 <h1 class="display-4">About</h1>
                 <hr>
-                <img class="center" src="./images/riceworker.jpg">
+                <img class="center" src="./images/rice.jpg">
                 <br><hr>
-                <h2 class="title2">Purpose</h2>
+                <h2 id="purpose" class="title2">Purpose</h2>
 
                 <p>The purpose of AARQ is to act on behalf of the U.S. rice industry:</p>
         
@@ -69,13 +94,13 @@
                     </ol>
                <br><hr><br>
 
-                <h2 class="title2">Membership</h2>
+                <h2 id="membership" class="title2">Membership</h2>
 
                 <p>AARQ has two categories of members:  Mill Members and Export Members.  Any individual or entity incorporated or domiciled in the United States that meets the criteria for either a “Mill Member” or an “Export Member” shall be eligible to become a member of AARQ.  A Mill Member is an individual or entity actively engaged in rice milling in the United States.  An Export Member is an individual or entity that has exported U.S. rice from the United States to any country prior to its application for membership and is not engaged in rice milling in the United States.  There are two classes of members:  Voting Members and Non-Voting Members.</p>
                 
                 <br><hr><br>
 
-                <h2 class="title2">AARQ Members</h2>
+                <h2 id="members" class="title2">AARQ Members</h2>
     
                 <br>
  
@@ -86,7 +111,7 @@
                 <ol id="myUL">
                     <li><a href="#"><strong>ADM Latin, Inc.</strong>, Decatur, Illinois,<br>
                         <strong>ADM Grain Company</strong>, Decatur, Illinois,<br>
-                        and <strong>ADM Rice, Inc.</strong>, Tarrytown, New
+                        and <strong>ADM Rice, Inc.</strong>, White Plains, New
                         York<br> (subsidiaries of Archer Daniels
                         Midland Company).</a></li>
                     <li><a href="#"><strong>American Commodity Company,
@@ -180,7 +205,7 @@
             
                 <br><hr><br>
 
-                <h2 class="title2">United States Regulations</h2>
+                <h2 id="usreg" class="title2">United States Regulations</h2>
 
                 <p>AARQ operates as an Export Trading Company (ETC) and received an Export Trade Certificate of Review from the U.S. Department of Commerce covering its activities in administering the quota on January 21, 1998.</>
                 
@@ -190,7 +215,7 @@
 
                 <br><hr><br>
 
-                <h2 class="title2">European Union Regulations</h2>
+                <h2 id="eureg" class="title2">European Union Regulations</h2>
 
                 <p>Click to download and read the <a class="docs" href="PDF/EC-Regulation-1273_2011-12.07.11.pdf">European Commission Regulation 1273 of December 7 2011</a>.</p>
                 <br><hr>
