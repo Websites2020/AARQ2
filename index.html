@@ -11,9 +11,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        // fadein
+        $(document).ready(function(){
+            $( "body" ).fadeOut(500).fadeIn(1000, "linear")
+        });
+    </script>
+
+    
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <div id="content">
     <img src="./images/branch.png" class="center3">
     <h2 class="mainTitle display-4">Association for the Administration of Rice Quotas, Inc.</h2>
     <ul class="nav justify-content-center">
@@ -95,6 +106,7 @@
             </div>
         </div>
     </div>
+    </div>
 </div>
 <script>
 
@@ -153,6 +165,8 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
         }, 1000);
-</script>     
+
+</script>
+
 </body>
 </html>

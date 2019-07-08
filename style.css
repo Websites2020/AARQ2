@@ -2,6 +2,7 @@ body {
   background-image: url("./images/ricepaper.png");
   /* background: rgb(220, 246, 255); */
   background-repeat: repeat;
+  /* display:none; */
 }
 
 .mainImage {
