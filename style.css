@@ -5,6 +5,18 @@ body {
   /* display:none; */
 }
 
+@keyframes example {
+  0%   {opacity: 0;}
+  25%  {opacity: .25;}
+  50%  {opacity: .5;}
+  100% {opacity: 1;}
+}
+
+#content {
+  animation-name: example;
+  animation-duration: 4s;
+} 
+
 .mainImage {
     display: block;
     margin: 0 auto;
