@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AARQ - Thank You</title>
+    <title>AARQ - Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+    
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-        <div id="content">
-            <div class="top-bar">
+    <div id="content">
+    <div class="top-bar">
             <div class="logo-container">
             <img src="./images/branch.png" class="center3">
             <h2 class="mainTitle display-4 logocentered">
@@ -83,7 +84,7 @@
             </div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.html" style="color: green;">Home</a>
             </li>
             
             <li class="nav-item dropdown">
@@ -127,112 +128,116 @@
             </li>
         </ul>
         </div>
-    <div class="container">
-            <div id="myModal" class="modal">
+<div class="containter containerhome">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3 class="centered modalTitle">The Next Auction is November 29, 2019</h3>
-                        <p class="centered modalText"><span id="demo"></span> remaining</p>
-                    </div>
-                  
-                </div>
-        <div class="row">
-            <div class="col-md-12">
-                <br>
-                <h1 class="display-4">Thank you</h1>
-                <br>
-                <h2>Someone will get in touch with you shortly.</h2>
-                
-                <br><br><br><br><br><br><br><br>
-                <hr>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <p class="centered">
-                            © 2019 Association for the Administration of Rice Quotas, Inc.<br>
-                            2001 L St NW Ste 1000, Washington, DC 20036<br>
-                            Phone: 202-466-1150 | Fax: 202-785-3330 | aarq@economic-consulting.com 
-                        </p>  
-                    </div>
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3 class="centered modalTitle">The Next Auction is November 29, 2019</h3>
+          <p class="centered modalText"><span id="demo"></span> remaining</p>
+        </div>
+      
+    </div> 
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+            <img class="mainImage" src="./images/rice-field.jpg">
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p class="centered">
+                        © 2019 Association for the Administration of Rice Quotas, Inc.<br>
+                        2001 L St NW Ste 1000, Washington, DC 20036<br>
+                        Phone: 202-466-1150 | Fax: 202-785-3330 | aarq@economic-consulting.com 
+                    </p>  
                 </div>
             </div>
         </div>
     </div>
     </div>
-    <script>
+</div>
+<script>
 
-            // Get the modal
-            var modal = document.getElementById("myModal");
-    
-            // Get the button that opens the modal
-            var btn = document.getElementById("myBtn");
-    
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-    
-            // When the user clicks on the button, open the modal 
-            btn.onclick = function() {
-            modal.style.display = "block";
-            }
-    
-            // When the user clicks on <span> (x), close the modal
-            span.onclick = function() {
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
             modal.style.display = "none";
-            }
-    
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-            }
-    
-            // COUNTDOWN TIMER
-            // Set the date we're counting down to
-            var countDownDate = new Date("Nov 29, 2019 9:00:00").getTime();
-    
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-    
-            // Get today's date and time
-            var now = new Date().getTime();
-    
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-    
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-            // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-    
-            // If the count down is finished, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-            }, 1000);
+        }
+        }
+
+        // COUNTDOWN TIMER
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 29, 2019 9:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+
     </script>
 
     <script>
         $(function() {
             $(".mainTitle").hover(
+
                 function () {
                     $(".text").removeClass("hidden");
                 },
+				
                 function () {
-                    $(".text").addClass("hidden");  
+                    $(".text").addClass("hidden");
+                    
                 }
             )
         });
     </script>
-    
+
 </body>
 </html>

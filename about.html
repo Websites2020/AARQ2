@@ -34,8 +34,72 @@
 </head>
 <body>
     <div id="content">
-        <img src="./images/branch.png" class="center3">
-        <h2 class="mainTitle display-4">Association for the Administration of Rice Quotas, Inc.</h2>
+        <div class="top-bar">
+            <div class="logo-container">
+            <img src="./images/branch.png" class="center3">
+            <h2 class="mainTitle display-4 logocentered">
+                <ul class="text hidden">
+                    <li>A</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">f</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">r</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">h</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">A</li>
+                    <li class="ghost">d</li>
+                    <li class="ghost">m</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">r</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">f</li>
+
+                    <li class="spaced">R</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">Q</li>
+                    <li class="ghost">u</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">,</li>
+                    
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">c</li>
+                </ul>
+                </h2>
+            </div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
@@ -81,15 +145,15 @@
                 <a class="nav-link" id="myBtn" style="color: white; background: darkgreen;" href="#">Next Auction Date</a>
             </li>
         </ul>
+        </div>
     <div class="container">
             <div id="myModal" class="modal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <h3 class="centered">The Next Auction is November 29, 2019</h3>
-                      <img class="center2" src="./images/map.png">
-                      <p class="centered" style="font-size: 20px"><span id="demo"></span> remaining</p>
+                        <span class="close">&times;</span>
+                        <h3 class="centered modalTitle">The Next Auction is November 29, 2019</h3>
+                        <p class="centered modalText"><span id="demo"></span> remaining</p>
                     </div>
                   
                 </div>
@@ -127,7 +191,7 @@
  
     <div class="row">
         <div class="col-md-12">
-                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for company by name or location...">
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for member by name or location">
             
                 <ol id="myUL">
                     <li><a href="#"><strong>ADM Latin, Inc.</strong>, Decatur, Illinois,<br>
@@ -228,18 +292,34 @@
 
                 <h2 id="usreg" class="title2">United States Regulations</h2>
 
-                <p>AARQ operates as an Export Trading Company (ETC) and received an Export Trade Certificate of Review from the U.S. Department of Commerce covering its activities in administering the quota on January 21, 1998.</>
+                <p>AARQ operates as an Export Trading Company (ETC) and received an Export Trade Certificate of Review from the U.S. Department of Commerce covering its activities in administering the quota on January 21, 1998.</p>
                 
-                <p>Click to download and read the <a class="docs" href="PDF/AARQ-ETCR-in-Federal-Register-1998.pdf">Federal Register from January 28, 1998</a>.</p>  
-
-                <p>Click to download and read the <a class="docs" href="PDF/2016-10711.pdf">Federal Register Notice from May 6 2016</a>.</p>
-
-                <br><hr><br>
+                <p>Click to view and download the <button id="regulation1" class="docs">Federal Register from January 28, 1998</button></p>
+                <br>
+                <div id="displayregulation1">
+                <embed src="PDF/AARQ-ETCR-in-Federal-Register-1998.pdf" type="application/pdf" width="100%" height="500px" />
+                <br>
+                </div>
+                
+                <p>Click to view and download the <button id="regulation2" class="docs">Federal Register Notice from May 6 2016</button></p>
+                <br>
+                <div id="displayregulation2">
+                <embed src="PDF/2016-10711.pdf" type="application/pdf" width="100%" height="500px" />
+                <br>
+                </div>
+                
+                <hr><br>
 
                 <h2 id="eureg" class="title2">European Union Regulations</h2>
 
-                <p>Click to download and read the <a class="docs" href="PDF/EC-Regulation-1273_2011-12.07.11.pdf">European Commission Regulation 1273 of December 7 2011</a>.</p>
-                <br><hr>
+                <p>Click to view and download the <button id="regulation3" class="docs">European Commission Regulation 1273 of December 7 2011</button></p>
+                <br>
+                <div id="displayregulation3">
+                <embed src="PDF/EC-Regulation-1273_2011-12.07.11.pdf" type="application/pdf" width="100%" height="500px" />
+                <br>
+                </div>
+                <hr>
+                
             </div>
         </div>
         <br>
@@ -336,6 +416,60 @@
             }
         }
     }
+    </script>
+
+<script>
+    $(document).ready(function(){
+        
+        $("#displayregulation1").hide();
+        $("#displayregulation2").hide();
+        $("#displayregulation3").hide();
+
+        
+        $("#regulation1").click(function(){
+            $("#displayregulation1").toggle();
+        });
+        $("#regulation2").click(function(){
+            $("#displayregulation2").toggle();
+        });
+        $("#regulation3").click(function(){
+            $("#displayregulation3").toggle();
+        });
+        });
+    </script>
+
+    <script>
+        // The function actually applying the offset
+        function offsetAnchor() {
+            if (location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 120);
+            }
+        }
+
+        // Captures click events of all <a> elements with href starting with #
+        $(document).on('click', 'a[href^="about.html#"]', function(event) {
+        // Click events are captured before hashchanges. Timeout
+        // causes offsetAnchor to be called after the page jump.
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 0);
+        });
+
+        // Set the offset when entering page with hash present in the url
+        window.setTimeout(offsetAnchor, 0);
+    </script>
+
+    <script>
+        $(function() {
+            $(".mainTitle").hover(
+                function () {
+                    $(".text").removeClass("hidden");
+                },
+                function () {
+                    $(".text").addClass("hidden"); 
+                }
+            )
+        });
     </script>
     
 </body>

@@ -16,10 +16,74 @@
 </head>
 <body>
     <div id="content">
-    <img src="./images/branch.png" class="center3">
-    <h2 class="mainTitle display-4">Association for the Administration of Rice Quotas, Inc.</h2>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
+    <div class="top-bar">
+            <div class="logo-container">
+            <img src="./images/branch.png" class="center3">
+            <h2 class="mainTitle display-4 logocentered">
+                <ul class="text hidden">
+                    <li>A</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">f</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">r</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">h</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">A</li>
+                    <li class="ghost">d</li>
+                    <li class="ghost">m</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">r</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">f</li>
+
+                    <li class="spaced">R</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">Q</li>
+                    <li class="ghost">u</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">,</li>
+                    
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">c</li>
+                </ul>
+                </h2>
+            </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html" style="color: green;">Home</a>
             </li>
             
@@ -62,24 +126,24 @@
             <li class="nav-item">
                 <a class="nav-link" id="myBtn" style="color: white; background: darkgreen;" href="#">Next Auction Date</a>
             </li>
-    </ul>
-<div class="containter">
+        </ul>
+        </div>
+<div class="containter containerhome">
     <!-- The Modal -->
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h3 class="centered">The Next Auction is November 29, 2019</h3>
-          <img class="center2" src="./images/map.png">
-          <p class="centered" style="font-size: 20px"><span id="demo"></span> remaining</p>
+          <h3 class="centered modalTitle">The Next Auction is November 29, 2019</h3>
+          <p class="centered modalText"><span id="demo"></span> remaining</p>
         </div>
       
     </div> 
     <div class="row">
         <div class="col-md-12">
             <br>
-            <img class="mainImage" src="./images/countryside.jpg" type="video/mp4">
+            <img class="mainImage" src="./images/rice-plants.jpg">
 
         </div>
     </div>
@@ -157,7 +221,20 @@
         }
         }, 1000);
 
-</script>
+    </script>
+
+    <script>
+        $(function() {
+            $(".mainTitle").hover(
+                function () {
+                    $(".text").removeClass("hidden");
+                },
+                function () {
+                    $(".text").addClass("hidden"); 
+                }
+            )
+        });
+    </script>
 
 </body>
 </html>

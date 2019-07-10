@@ -33,15 +33,79 @@
 </head>
 <body>
         <div id="content">
-        <img src="./images/branch.png" class="center3">
-        <h2 class="mainTitle display-4">Association for the Administration of Rice Quotas, Inc.</h2>
+           <div class="top-bar">
+            <div class="logo-container">
+            <img src="./images/branch.png" class="center3">
+            <h2 class="mainTitle display-4 logocentered">
+                <ul class="text hidden">
+                    <li>A</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">f</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">r</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">h</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">A</li>
+                    <li class="ghost">d</li>
+                    <li class="ghost">m</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">r</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">f</li>
+
+                    <li class="spaced">R</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">Q</li>
+                    <li class="ghost">u</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">,</li>
+                    
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">c</li>
+                </ul>
+                </h2>
+            </div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                     About
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -80,15 +144,15 @@
                 <a class="nav-link" id="myBtn" style="color: white; background: darkgreen;" href="#">Next Auction Date</a>
             </li>
         </ul>
+        </div>
     <div class="container">
             <div id="myModal" class="modal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <h3 class="centered">The Next Auction is November 29, 2019</h3>
-                      <img class="center2" src="./images/map.png">
-                      <p class="centered" style="font-size: 20px"><span id="demo"></span> remaining</p>
+                        <span class="close">&times;</span>
+                        <h3 class="centered modalTitle">The Next Auction is November 29, 2019</h3>
+                        <p class="centered modalText"><span id="demo"></span> remaining</p>
                     </div>
                   
                 </div>
@@ -242,6 +306,19 @@
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
             }, 1000);
+    </script>
+
+    <script>
+        $(function() {
+            $(".mainTitle").hover(
+                function () {
+                    $(".text").removeClass("hidden");
+                },
+                function () {
+                    $(".text").addClass("hidden");   
+                }
+            )
+        });
     </script>
     
 </body>

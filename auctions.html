@@ -33,15 +33,79 @@
 </head>
 <body>
         <div id="content">
-        <img src="./images/branch.png" class="center3">
-        <h2 class="mainTitle display-4">Association for the Administration of Rice Quotas, Inc.</h2>
+           <div class="top-bar">
+            <div class="logo-container">
+            <img src="./images/branch.png" class="center3">
+            <h2 class="mainTitle display-4 logocentered">
+                <ul class="text hidden">
+                    <li>A</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">f</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">r</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">h</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">A</li>
+                    <li class="ghost">d</li>
+                    <li class="ghost">m</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">r</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">n</li>
+
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">f</li>
+
+                    <li class="spaced">R</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">c</li>
+                    <li class="ghost">e</li>
+
+                    <li class="spaced">Q</li>
+                    <li class="ghost">u</li>
+                    <li class="ghost">o</li>
+                    <li class="ghost">t</li>
+                    <li class="ghost">a</li>
+                    <li class="ghost">s</li>
+                    <li class="ghost">,</li>
+                    
+                    <li class="ghost">&nbsp;</li>
+                    <li class="ghost">i</li>
+                    <li class="ghost">n</li>
+                    <li class="ghost">c</li>
+                </ul>
+                </h2>
+            </div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
             
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="about.html" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                     About
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -80,15 +144,15 @@
                 <a class="nav-link" id="myBtn" style="color: white; background: darkgreen;" href="#">Next Auction Date</a>
             </li>
         </ul>
+        </div>
     <div class="container">
             <div id="myModal" class="modal">
 
                     <!-- Modal content -->
                     <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <h3 class="centered">The Next Auction is November 29, 2019</h3>
-                      <img class="center2" src="./images/map.png">
-                      <p class="centered" style="font-size: 20px"><span id="demo"></span> remaining</p>
+                        <span class="close">&times;</span>
+                        <h3 class="centered modalTitle">The Next Auction is November 29, 2019</h3>
+                        <p class="centered modalText"><span id="demo"></span> remaining</p>
                     </div>
                   
                 </div>
@@ -102,43 +166,70 @@
                 </div> -->
                 <h1 class="display-4">Auctions</h1>
                 <hr>
-                <img class="center" src="./images/rice-plants.jpg">
+                <img class="center" src="./images/rice-bowl2.jpg">
                 <br><hr>
                 <h2 id="schedule" class="title2">2019 Schedule</h2>
     
-                    Click to download and read the <a class="docs" href="PDF/AARQ-Schedule-of-Open-Tenders-for-2019.pdf">2019 Schedule of Open Tenders</a>.
-                    <br><br><hr>
+                    Click to view and download the <button id="schedule1" class="docs">2019 Schedule of Open Tenders</button>
+                    <br><br>
+                    <div id="displayschedule1">
+                        <embed src="PDF/AARQ-Schedule-of-Open-Tenders-for-2019.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
 
                 <h2 class="title2">2018 Schedule</h2>
 
-                    Click to download and read the <a class="docs" href="PDF/AARQ-Schedule-of-Open-Tenders-for-2018.pdf">2018 Schedule of Open Tenders</a>.
-                    <br><br><hr>
+                    Click to view and download the <button id="schedule2" class="docs">2018 Schedule of Open Tenders</button>
+                    <br><br>
+                    <div id="displayschedule2">
+                    <embed src="PDF/AARQ-Schedule-of-Open-Tenders-for-2018.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
 
                 <h2 id="opentender" class="title2">Notice of Open Tender</h2>
     
-                    Click to download and read the <a class="docs" href="PDF/AARQ-January-2019-Tender-Notice.pdf">January 2019 Notice of Open Tender</a>.
-                    <br><br><hr>
+                    Click to view and download the <button id="schedule3" class="docs">January 2019 Notice of Open Tender</button>
+                    <br><br>
+                    <div id="displayschedule3">
+                    <embed src="PDF/AARQ-January-2019-Tender-Notice.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
 
                 <h2 id="bids" class="title2">Bid Instructions</h2>
     
-                    Click to download the <a class="docs" href="PDF/AARQ-January-2019-Bid-Instructions.pdf">January 2019 Bid Instructions</a>.
-                    <br><br><hr>
+                    Click to view and download the <button id="schedule4" class="docs">January 2019 Bid Instructions</button>
+                    <br><br>
+                    <div id="displayschedule4">
+                    <embed src="PDF/AARQ-January-2019-Bid-Instructions.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
 
                 <h2 class="title2">Bid Form</h2>
     
-                Click to download the <a class="docs" href="PDF/Bid-Form--Fillable-PDF.pdf">January 2019 Bid Form</a>.
-                <br><br><hr>
+                    Click to view and download the <button id="schedule5" class="docs">January 2019 Bid Form</button>
+                    <br><br>
+                    <div id="displayschedule5">
+                    <embed src="PDF/Bid-Form--Fillable-PDF.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
 
                 <h2 id="letter"class="title2">Letter of Credit</h2>
     
-                    Click to download the <a class="docs" href="PDF/Letter-of-Credit-PDF.pdf">Sample Letter of Credit</a>.
-                    <br><br><hr>
+                    Click to view and download the <button id="schedule6" class="docs">Sample Letter of Credit</button>
+                    <br><br>
+                    <div id="displayschedule6">
+                    <embed src="PDF/Letter-of-Credit-PDF.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
 
                 <h2 id="results" class="title2">Auction Results</h2>
   
-                    Click to download and read the <a class="docs" href="PDF/AARQ-Lowest-Winning-Bid-Table.pdf">Lowest Winning Bid Table</a>.
-                    <br><br><hr>
-
+                    Click to view and download the <button id="schedule7" class="docs">Lowest Winning Bid Table</button>
+                    <br><br>
+                    <div id="displayschedule7">
+                    <embed src="PDF/AARQ-Lowest-Winning-Bid-Table.pdf" type="application/pdf" width="100%" height="500px" />
+                    </div>
+                    <br><hr>
             </div>
         </div>
         <br>
@@ -214,6 +305,74 @@
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
             }, 1000);
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $("#displayschedule1").hide();
+        $("#displayschedule2").hide();
+        $("#displayschedule3").hide();
+        $("#displayschedule4").hide();
+        $("#displayschedule5").hide();
+        $("#displayschedule6").hide();
+        $("#displayschedule7").hide();
+
+      $("#schedule1").click(function(){
+        $("#displayschedule1").toggle();
+      });
+      $("#schedule2").click(function(){
+        $("#displayschedule2").toggle();
+      });
+      $("#schedule3").click(function(){
+        $("#displayschedule3").toggle();
+      });
+      $("#schedule4").click(function(){
+        $("#displayschedule4").toggle();
+      });
+      $("#schedule5").click(function(){
+        $("#displayschedule5").toggle();
+      });
+      $("#schedule6").click(function(){
+        $("#displayschedule6").toggle();
+      });
+      $("#schedule7").click(function(){
+        $("#displayschedule7").toggle();
+      });
+    });
+    </script>
+
+    <script>
+        // The function actually applying the offset
+        function offsetAnchor() {
+            if (location.hash.length !== 0) {
+                window.scrollTo(window.scrollX, window.scrollY - 120);
+            }
+        }
+
+        // Captures click events of all <a> elements with href starting with #
+        $(document).on('click', 'a[href^="auctions.html#"]', function(event) {
+        // Click events are captured before hashchanges. Timeout
+        // causes offsetAnchor to be called after the page jump.
+        window.setTimeout(function() {
+            offsetAnchor();
+        }, 0);
+        });
+
+        // Set the offset when entering page with hash present in the url
+        window.setTimeout(offsetAnchor, 0);
+    </script>
+
+    <script>
+        $(function() {
+            $(".mainTitle").hover(
+                function () {
+                    $(".text").removeClass("hidden");
+                },
+                function () {
+                    $(".text").addClass("hidden");  
+                }
+            )
+        });
     </script>
     
 </body>
