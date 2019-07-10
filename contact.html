@@ -172,8 +172,8 @@
             </div>
         </div>
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-2"></div> -->
+            <div class="col-md-6">
                 <form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
                   <input name="skip_WhereToSend" type="hidden" value="aarq@economic-consulting.com" />
                   <input name="skip_SnapHostID" type="hidden" value="8WWYLHFTKWG3" />
@@ -199,7 +199,7 @@
                   obj.src = src + '&rad=' + date.getTime();
                   return false; }
                   </script>
-                  <table border="0" cellpadding="5" cellspacing="0" width="600">
+                  <table border="0" cellpadding="5" cellspacing="0" width="100%">
                   <tr>
                   <td><b>Name*:</b></td>
                   <td><input name="Name" class="form-control" type="text" maxlength="60" style="width:100%;" /></td>
@@ -234,7 +234,21 @@
                   </table><br />
                 </form>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                    var setting = {"height":500,"width":'100%',"zoom":15,"queryString":"2001 L St NW, Washington, DC 20036, USA","place_id":"ChIJy4pDY7e3t4kR-Q6U8t3TyR8","satellite":false,"centerCoord":[38.90388161281556,-77.04520285000001],"cid":"0x1fc9d3ddf2940ef9","cityUrl":"/us/dc/washington","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"53752"};
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=53752';
+                    s.async = true;
+                    s.onload = function (e) {
+                      window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                  })();</script><a href="https://1map.com/map-embed?embed_id=53752">1map.com</a></div>
+            </div>
             </div>
                 <br><hr>
         <br>
