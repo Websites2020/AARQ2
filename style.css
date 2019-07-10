@@ -72,7 +72,7 @@ a {
   
 /* Modal Content/Box */
 .modal-content {
-    background-color: rgba(63, 92, 63, 1);
+    background-color: rgba(63, 92, 63, 0.75);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: none;
@@ -234,4 +234,35 @@ a {
     font-size: 0px;
     float: left;
     color: white;
+  }
+
+  /* BUTTONS */
+
+  .button {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    transform: translatez(0);
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    font-weight: normal;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.5);
+  }
+  .button:active {
+    box-shadow: none;
+  }
+  
+  .instagram {
+    text-align: center;
+    border-radius: 0;
+    border: none;
+    padding: 10px;
+    color: white;
+    background: darkgreen;
+    transition: all 0.2s ease-out 0s;
   }
