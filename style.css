@@ -258,7 +258,7 @@ a {
     box-sizing: border-box;
     font-size: 1.0em;
     font-weight: normal;
-    box-shadow: 0 9px 18px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.5);
   }
   .button:active {
     box-shadow: none;
@@ -274,4 +274,24 @@ a {
     transition: all 0.2s ease-out 0s;
   }
 
-  /* Strikethrough */
+  /* Nav Decoration */
+
+  
+
+  .nav-link:not(.popup) {
+    color: grey;
+    transition: color .5s ease;
+  }
+
+  a.active {
+    color: green !important;
+    transition: color .5s ease;
+  }
+
+  a.active:hover {
+    color: black !important;
+  }
+
+  .nav-link:hover {
+    color: black;
+  }
